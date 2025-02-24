@@ -1,0 +1,56 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  width: 205px;
+  height: 60px;
+  gap: 10px;
+  border-radius: 30px;
+  padding: 20px 40px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden; 
+}
+
+.buttonFilled {
+  background: linear-gradient(90.76deg, #faa15e -0.41%, #f37b55 100.42%);
+  color: #fff;
+  border: none;
+}
+
+.buttonFilled:hover,
+.buttonFilled:focus-visible {
+  filter: brightness(1.1);
+}
+
+.buttonOutlined {
+  background: transparent;
+  color: #f37b55;
+  border: 1px solid #f37b55;
+  border-radius: 30px;
+  position: relative; 
+}
+
+.buttonOutlined:hover,
+.buttonOutlined:focus-visible {
+  background: linear-gradient(90.76deg, #faa15e -0.41%, #f37b55 100.42%);
+  border: none;
+}
+ 
+.buttonOutlined:hover .buttonIcon,
+.buttonOutlined:focus-visible .buttonIcon {
+  filter: brightness(0) invert(1);
+}
+
+.button:hover,
+.button:focus-visible {
+  text-decoration: none;
+  color: #fff
+}
+
+.buttonIcon {
+  width: 20px;
+  height: 20px; 
+}

@@ -3,21 +3,16 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+.main {
   position: relative;
-  overflow: hidden;
+  width: 100%;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.connecSvgWrapper {
+  position: absolute;
+  top: 20%;
+  left: 50%;
 }
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.connectSvg {
+  transform: translate(-50%, 0);
 }

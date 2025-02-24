@@ -1,0 +1,13 @@
+.footerSection { 
+    padding: 6rem 0;
+    text-align: center;
+    padding: 16rem 0;
+  }
+  
+  .footerButtons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
