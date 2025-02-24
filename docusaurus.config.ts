@@ -79,19 +79,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'API',
-              to: '/api/intro',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Shraga`,
+      // fully customized.  https://docusaurus.io/docs/swizzling
     },
     prism: {
       theme: prismThemes.github,

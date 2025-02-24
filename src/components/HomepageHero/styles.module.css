@@ -1,0 +1,28 @@
+.heroSection {
+  background: linear-gradient(to bottom, 
+      var(--secondary-bg) 0%, 
+      var(--secondary-bg) 80%, 
+      var(--ifm-background-color) 80%, 
+      var(--ifm-background-color) 100%);
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.heroImage {
+  max-width: 100%;
+}
+
+@media (max-width: 996px) {
+  .responsiveRow {
+    display: flex;    
+        flex-direction: column-reverse;  
+  }
+
+  
+  .heroSection {
+    background: var(--secondary-bg); 
+    padding-bottom: 16px;
+  }
+}

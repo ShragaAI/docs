@@ -1,0 +1,66 @@
+.wrapper {
+  position: relative;
+}
+
+.evolutionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 0;
+}
+
+.secondaryBackground {
+  background-color: var(--secondary-bg);
+}
+
+.evolutionContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-direction: row;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+.textCol {
+  max-width: 425px;
+}
+
+.titleCol {
+  max-width: 500px;
+}
+
+.svgCol {
+  max-width: 325px;
+}
+
+.evolutionConnectSvg {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 996px) {
+  .evolutionConnectSvg {
+    display: none;
+  }
+  .svgCol {
+    transform: none !important;
+  }
+  .titleCol {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .evolutionContent {
+    flex-direction: column;
+    gap: 0rem;
+    padding-top: 16px;
+  }
+  .textCol p {
+      text-align: justify !important;
+  }
+}
