@@ -37,12 +37,19 @@ const EvolutionSteps: EvolutionItem[] = [
     transformImgVertical: 16,
   },
   {
-    text: `Shraga makes it easy to learn from experience and improve as your RAG matures. Collect feedback from users, internal or external,
-     sort through issues, improve, run evaluations, and iterate. - wise old man Shraga`,
+    text: `As your RAG use case grows, Shraga supports the shift from experimentation to reliable operations. 
+    Integrate with internal systems, add observability, and automate evaluations with a battle-tested setup.`,
     imgUrl: require("@site/static/img/evolution-4.png").default,
     reverse: false,
-    transformImgVertical: 16,
+    transformImgVertical: 12,
     hasDarkBackground: true,
+  },
+  {
+    text: `Shraga makes it easy to learn from experience and improve as your RAG matures. Collect feedback from users, internal or external,
+     sort through issues, improve, run evaluations, and iterate. - wise old man Shraga`,
+    imgUrl: require("@site/static/img/evolution-5.png").default,
+    reverse: true,
+    transformImgVertical: 16,
   },
 ];
 
@@ -52,7 +59,7 @@ function EvolutionItem({
   imgUrl,
   reverse,
   transformImgVertical,
-  hasDarkBackground
+  hasDarkBackground,
 }: EvolutionItem) {
   return (
     <div
@@ -61,9 +68,7 @@ function EvolutionItem({
       })}
     >
       <div className="container">
-        {title && (
-          <h2 className={clsx("title", styles.titleCol)}>{title}</h2>
-        )}
+        {title && <h2 className={clsx("title", styles.titleCol)}>{title}</h2>}
         <div
           className={clsx("row", styles.evolutionContent, {
             [styles.rowReverse]: reverse,
