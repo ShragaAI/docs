@@ -41,7 +41,7 @@ const EvolutionSteps: EvolutionItem[] = [
     Integrate with internal systems, add observability, and automate evaluations with a battle-tested setup.`,
     imgUrl: require("@site/static/img/evolution-4.png").default,
     reverse: false,
-    transformImgVertical: 4,
+    transformImgVertical: 12,
     hasDarkBackground: true,
   },
   {
