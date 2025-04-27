@@ -11,14 +11,14 @@ permissions:
 
 env:
   AWS_REGION: sa-east-1
-  
-permissions:
-  id-token: write
-  contents: read
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
 
     steps:
       - uses: actions/checkout@v3
