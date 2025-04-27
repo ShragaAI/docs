@@ -9,9 +9,6 @@ permissions:
   id-token: write
   contents: read
 
-env:
-  AWS_REGION: sa-east-1
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
